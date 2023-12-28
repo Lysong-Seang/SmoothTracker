@@ -53,29 +53,37 @@ function Homepage() {
           <Image
             src={home}
             alt="Home Image"
-            width={500} // Specify width
-            height={300} // Specify height
+            width={500}
+            height={300}
             objectFit="contain"
           />
         </Box>
       </Flex>
 
-      <Box
-        ml={20}
-        overflow="hidden"
-        borderRadius="20px"
-        width={300}
-        height={300}
-      >
-        <Image
-          src={task}
-          alt="Task Image"
-          width={300} // Specify width
-          height={300} // Specify height
-          objectFit="contain"
-          layout="responsive" // This makes the image scale properly within the container
-        />
-      </Box>
+      <Flex align="center" mt={10} background={"grey"} p={5}>
+        <Box
+          borderRadius="20px"
+          overflow="hidden"
+          ml={20}
+          position="relative"
+          width={500}
+          height={300}
+        >
+          <Image src={task} alt="Task Image" layout="fill" objectFit="cover" />
+        </Box>
+        <Box ml={20}>
+          <Text fontSize="lg">
+            Smooth Tracker offers a range of features to help you <br />
+            manage your tasks effectively. Whether you need to <br />
+            track deadlines, assign tasks, or collaborate with your team <br />
+            Smooth Tracker Got you cover
+            <br />
+          </Text>
+          <Button borderRadius={20} m={4} _hover={{ bg: "gray.300" }}>
+            Learn more
+          </Button>
+        </Box>
+      </Flex>
     </div>
   );
 }
