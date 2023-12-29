@@ -71,7 +71,7 @@ function Homepage() {
         >
           <Image src={task} alt="Task Image" layout="fill" objectFit="cover" />
         </Box>
-        <Box ml={20}>
+        <Box ml={40}>
           <Text fontSize="lg">
             Smooth Tracker offers a range of features to help you <br />
             manage your tasks effectively. Whether you need to <br />
